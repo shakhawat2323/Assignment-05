@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div
+        class="flex flex-row  w-[350px]  overflow-hidden mx-auto justify-between  bg-[#F9F7F3]   md:w-full md:px-[100px] md:py-9 ">
+        <a href="index.html" class="md:text-[20px] font-bold bg-[#B4F461] md:px-6 md:py-4 px-2 py-2 rounded-xl">Home</a>
+        <div class="flex flex-row justify-between items-center  md:gap-5"><img src="img/logo.png" alt=""><span
+            class="md:text-[20px] text-[15px] font-semibold">Donate Bangladesh</span></div>
+        <div class="flex flex-row justify-between items-center md:gap-5">
+          <img src="img/coin.png" alt="">
+          <p id="main-balanec" class="md:text-[20px] font-semibold">5500</p><span
+            class="md:text-2xl font-semibold">BDT</span>
+        </div>
+      </div>
+    </header>
+    <main class="py-[90px] px-[90px]">
+        <h1 class="text-[50px] mt-5 font-bold flex"> Important FAQ <img class="w-[80px] ml-5"  src="img/comment.png" alt=""></h1>
+
+        <div>
+            <div class="collapse collapse-arrow bg-base-200 mb-5">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">what is the Document object Model (DOM)?
+                </div>
+                <div class="collapse-content">
+                  <p>The Docoument Object Model (DOM) is a programming interface it represents an HTML of XML document as a hierarchical tree structure,where each element,attribute,and text becomes a node.javascript can interact with the DOM to dynamically update and manipulate webpage conteant and structure.</p>
+                </div>
+              </div>
+
+              <div class="collapse collapse-arrow bg-base-200 mb-5">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an Element from the DOM?</div>
+                <div class="collapse-content">
+                  <p>To select an element from the DOM in JavaScript, you can use methods like document.getElementById('id') for selecting by ID, document.querySelector('selector') for selecting the first matching element, or document.querySelectorAll('selector') to select multiple elements based on CSS selectors.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200 mb-5">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">what is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                  <p>
+                    Event delegation is a technique in the DOM where a single event listener is added to a parent element to handle events on its child elements. This is useful because it reduces memory usage and simplifies code, especially when dynamically adding elements, as the listener automatically applies to future child elements.</p>
+                </div>
+              </div>
+              <div class="collapse bg-base-200">
+                <input type="radio" name="my-accordion-1" />
+                <div class="collapse-title text-xl font-medium">
+                    how do you manipulate an element's attributes and styles using the DOM;</div>
+                <div class="collapse-content">
+                  <p>
+                    To manipulate an element's attributes, use setAttribute() or directly modify properties like element.src. For styles, you can modify the style property, e.g., element.style.color = 'blue' or apply multiple styles using element.style.cssText. Both methods allow dynamic updates to an element's appearance and behavior.</p>
+                </div>
+              </div>
+        </div>
+        
+
+    </main>
+    
+</body>
+</html>
