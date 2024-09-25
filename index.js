@@ -30,8 +30,20 @@ document.getElementById('donate-btn').addEventListener('click',function(){
         const nohakhali = donateInput +  donatedAmount;
         document.getElementById('my_modal_6').showModal();
         const nohakhalidoneteblane=document.getElementById('donateted-amount').innerText=nohakhali;
+        const  donateOInput = parseFloat(document.getElementById('input-donate-btn-01').value);
+    
+        const d = new Date(); 
+           
+        const p= document.createElement('p');
+        // p.classList.add('text-xl')
+        p.innerHTML =`
+        <div class="border-white border border-2 shadow-2xl rounded-md w-4/6 h-24 mt-7"  ><h4 class="text-2xl"> ${donateOInput} Taka is Donated for Donate for Flood at Noakhali,Bangladesh</h4>
+         ${d} </div>`
+        // div.appendChild(p)
+        document.getElementById('showHistory').appendChild(p)
   
 })
+
 
 // Donate for Flood at Noakhali, Bangladesh section
 
@@ -60,6 +72,17 @@ document.getElementById('donate-btn2').addEventListener('click',function(){
         const nohakhali = donateInput +  donatedAmount;
         document.getElementById('my_modal_6').showModal();
         const nohakhalidoneteblane=document.getElementById('donateted-amount02').innerText=nohakhali;
+        const  donateOInput = parseFloat(document.getElementById('input-donate-btn-02').value);
+    
+        const d = new Date(); 
+           
+        const p= document.createElement('p');
+        // p.classList.add('text-xl')
+        p.innerHTML =`
+        <div class="border-white border border-2 shadow-2xl rounded-md w-4/6 h-24 mt-7"  ><h4 class="text-2xl"> ${donateOInput} Taka is Donated for Donate for Flood at Feni,Bangladesh</h4>
+         ${d} </div>`
+        // div.appendChild(p)
+        document.getElementById('showHistory').appendChild(p)
   
 })
 
@@ -89,6 +112,17 @@ document.getElementById('donate-btn03').addEventListener('click',function(){
         const nohakhali = donateInput +  donatedAmount;
         document.getElementById('my_modal_6').showModal();
         const nohakhalidoneteblane=document.getElementById('donateted-amount3').innerText=nohakhali;
+        const  donateOInput = parseFloat(document.getElementById('input-donate-btn-03').value);
+    
+        const d = new Date(); 
+           
+        const p= document.createElement('p');
+        // p.classList.add('text-xl')
+        p.innerHTML =`
+        <div class="border-white border border-2 shadow-2xl rounded-md w-4/6 h-24 mt-7"  ><h4 class="text-2xl"> ${donateOInput} Taka is Donated for Donate for Flood at Feni,Bangladesh</h4>
+         Date:  ${d} </div>`
+        // div.appendChild(p)
+        document.getElementById('showHistory').appendChild(p)
   
 })
 
@@ -98,36 +132,36 @@ document.getElementById('donate-btn03').addEventListener('click',function(){
 
 
 
-document.getElementById('history-tab').addEventListener('click',function(){
+// document.getElementById('history-tab').addEventListener('click',function(){
    
-    const donateInput = parseFloat(document.getElementById('input-donate-btn-01').value);
-    const d = new Date(); 
-       
-    const p= document.createElement('p');
-    p.innerText =`${donateInput} tk jok kora holo
-     ${d}`
-    // div.appendChild(p)
-    document.getElementById('showHistory').appendChild(p)
+
 
 
 
     
-})
+// })
 
-document.getElementById('donate-btn').addEventListener('click',function(){
+
     
-    
-    const b = new Date();
-    const donateInput = parseFloat(document.getElementById('input-donate-btn-01').value);
+    // const b = new Date();
+    // const donateInput = parseFloat(document.getElementById('input-donate-btn-01').value);
 
-    const p = document.createElement('p');
-    p.innerText=` ${donateInput} kmon aco tumi dos
-    ${b}`
-    document.getElementById('showHistory').appendChild(p)
-})
+    // const p = document.createElement('p');
+    // p.innerText=` ${donateInput} kmon aco tumi dos
+    // ${b}`
+    // document.getElementById('showHistory').appendChild(p)
 
 
 
+// const div = document.createElement('div');
+// const inputmoney = document.getElementById('input-donate-btn-01')
+// const d = new Date();
+// div.innerText=`
+// <h4 class="text-2xl font-bold">Cash Out </h4>
+// <p> ${inputmoney} withdrow. new balance
+//  ${d}</p>
+// `
+// document.getElementById('showHistory').appendChild(div)
 
 
 
